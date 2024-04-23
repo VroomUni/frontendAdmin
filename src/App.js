@@ -20,7 +20,7 @@ function App() {
        
         <Route path="/table" element={<TableAdmin />} />
           <Route path="/Mainsection2" element={<MainSection2 />} />
-          <Route path="/ "element={<SignIn/>} />
+          <Route path="/"element={<SignIn/>} />
         </Routes>
       </Router>
     
