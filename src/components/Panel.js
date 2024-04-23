@@ -1,14 +1,15 @@
 import React from "react";
-import "./Panel.css"
+import "./Panel.css";
+import VroomLog from '../pic/logo.png'; 
 
 const Panel = () => {
   return (
     <div className="left-panel">
       <div className="content">
-        <h3>Welcome Admin!</h3>
-        <p>Welcome to the Admin Dashboard! Here, you'll find all the tools and insights needed to manage and monitor system operations effectively.</p>
-
+      <img className="LogoImage"src={VroomLog} alt="Logo" />
+        
       </div>
+      <h3 className="panel-header">Welcome Admin!</h3>
     </div>
   );
 };

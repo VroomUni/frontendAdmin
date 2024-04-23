@@ -13,12 +13,14 @@ function App() {
     
       <Router>
         <Routes>
-        <Route path="/" element={<SignIn />} />
+      
           <Route path="/Dashboard" element={<Dashboard />} />
        
           <Route path="/Mainsection1" element={<MainSection1 />} />
+       
         <Route path="/table" element={<TableAdmin />} />
           <Route path="/Mainsection2" element={<MainSection2 />} />
+          <Route path="/"element={<SignIn/>} />
         </Routes>
       </Router>
     
