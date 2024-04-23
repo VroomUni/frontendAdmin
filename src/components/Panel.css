@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-    justify-content: space-around;
-    text-align: center;
-    z-index: 6;
-    pointer-events: all;
-    padding: 3rem 17% 2rem 12%;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
   }
+  
   .LogoImage{
     margin-right: 10rem;
   }
