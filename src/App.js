@@ -13,10 +13,11 @@ function App() {
     
       <Router>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/home" element={<Dashboard />} />
           <Route path="/Mainsection1" element={<MainSection1 />} />
         <Route path="/dashboard" element={<TableAdmin />} />
           <Route path="/Mainsection2" element={<MainSection2 />} />
+          <Route path="/ "element={<SignIn/>} />
         </Routes>
       </Router>
     
