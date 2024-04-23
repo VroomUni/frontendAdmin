@@ -1,50 +1,69 @@
-import React from 'react';
-import './TableAdmin.css';
+import React, { useState } from 'react';
+import './TableAdmin.css'; // Ensure your CSS file is named TableAdmin.css and is in the same directory
 
-const usersData = [
-  { id: 1, name: 'Isabella Christensen', message: 'Lorem ipsum is simply...', date: '11 MAY 12:56' },
-  { id: 2, name: 'Mathilde Andersen', message: 'Lorem ipsum is simply text of...', date: '11 MAY 10:35' },
-  // ... more users
-];
+// ReportRow component represents a single row in the reports table
+const ReportRow = ({ report, onDetails }) => {
+  return (
+    <tr>
+      <td>{report.reportedBy.name}</td>
+      <td>{report.reportedUser.name}</td>
+      <td>{report.reason}</td>
+      <td>{report.date}</td>
+      <td>
+        <button className="action-button ban" onClick={() => onDetails(report.reportedUser.userId)}>
+          See Detail
+        </button>
+      </td>
+    </tr>
+  );
+};
 
-const TableAdmin = () => {
-  const handleApprove = (userId) => {
-    console.log('Approve', userId);
-    // Implement the approve logic here
-  };
+// ReportTableAdmin component holds the state for all reports and renders the table
+const ReportTableAdmin = () => {
+  const [reports, setReports] = useState([
+    // Example report data
+    {
+      reportId: 'R1',
+      reportedBy: {
+        name: 'Alice Smith',
+        userId: 'U1'
+      },
+      reportedUser: {
+        name: 'Bob Johnson',
+        userId: 'U2'
+      },
+      reason: 'Inappropriate behavior',
+      date: '2024-04-22',
+    },
+    // ... add more reports as needed
+  ]);
 
-  const handleReject = (userId) => {
-    console.log('Reject', userId);
-    // Implement the reject logic here
+  const handleSeeDetails = (userId) => {
+    console.log('See Details', userId);
+    // Placeholder for ban logic, e.g., API call to ban the user
+    // After banning, you may want to remove the report from the list or mark as resolved
   };
 
   return (
-    <div className="dashboard">
-      <h2>Recent Users</h2>
-      <div className="user-list">
-        {usersData.map(user => (
-          <div key={user.id} className="user-item">
-            <div className="user-info">
-              <div className="avatar">
-                {/* Avatar should be placed here */}
-              </div>
-              <div className="details">
-                <h3>{user.name}</h3>
-                <p>{user.message}</p>
-              </div>
-            </div>
-            <div className="timestamp">
-              {user.date}
-            </div>
-            <div className="actions">
-              <button className="btn reject" onClick={() => handleReject(user.id)}>Reject</button>
-              <button className="btn approve" onClick={() => handleApprove(user.id)}>Approve</button>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="reports-table-container">
+      <table className="reports-table">
+        <thead className="reports-table-header">
+          <tr>
+            <th>Reported By</th>
+            <th>Reported User</th>
+            <th>Reason</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {reports.map((report) => (
+            <ReportRow key={report.reportId} report={report} onDetails={handleSeeDetails} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
 
-export default TableAdmin;
+export default ReportTableAdmin;

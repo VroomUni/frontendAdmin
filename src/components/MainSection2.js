@@ -1,12 +1,13 @@
 import React from 'react';
 import './Dashboard.css';
 import Navigation from './Navigation';
+import TableAdmin from './TableAdmin';
 
 const MainSection = () => {
   return (
      <div className="container">
        <Navigation />
-    <section className="main">
+    {/* <section className="main">
       
       <div className="main-top">
         <p>the main section 222222222222222222222 test !</p>
@@ -51,12 +52,13 @@ const MainSection = () => {
           <a href="#">See all</a>
         </div>
 
-        {/* Job cards */}
+       
         <div className="job_card">
-          {/* Each job card */}
+     
         </div>
       </div>
-    </section>
+    </section> */}
+    <TableAdmin/>
     </div>
   );
 
