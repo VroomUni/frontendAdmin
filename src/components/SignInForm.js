@@ -1,10 +1,19 @@
+// SignInForm.js
 import React from "react";
-import "./SignInForm.css"
+import "./SignInForm.css";
 
+const SignInForm = ({ onLogin }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    
+    // Call the callback function to notify the parent component
+    if (onLogin) {
+      onLogin();
+    }
+  };
 
-const SignInForm = () => {
   return (
-    <form className="sign-in-form">
+    <form className="sign-in-form" onSubmit={handleSubmit}>
       <h2 className="title">Sign in</h2>
       <div className="input-field">
         <i className="fas fa-user"></i>
@@ -15,7 +24,6 @@ const SignInForm = () => {
         <input type="password" placeholder="Password" />
       </div>
       <input type="submit" value="Login" className="btn" />
-  
     </form>
   );
 };
