@@ -1,0 +1,46 @@
+/* ReportDetails.css */
+.modalContent {
+    position: relative; /* Needed for absolute positioning of the close icon */
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .userDetails, .reportContent, .actionButtons {
+    margin-bottom: 1rem;
+  }
+  
+  .userDetails p, .reportContent p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .actionButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .actionButtons button {
+    flex-grow: 1;
+    margin-right: 10px; /* Spacing between buttons */
+  }
+  
+  .actionButtons button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+
+  

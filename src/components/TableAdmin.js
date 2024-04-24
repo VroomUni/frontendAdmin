@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './TableAdmin.css'; // Ensure your CSS file is named TableAdmin.css and is in the same directory
+import ReportDetails from './ReportDetails';
 
 // ReportRow component represents a single row in the reports table
 const ReportRow = ({ report, onDetails }) => {
@@ -20,8 +21,8 @@ const ReportRow = ({ report, onDetails }) => {
 
 // ReportTableAdmin component holds the state for all reports and renders the table
 const ReportTableAdmin = () => {
+ 
   const [reports, setReports] = useState([
-    // Example report data
     {
       reportId: 'R1',
       reportedBy: {
@@ -35,13 +36,47 @@ const ReportTableAdmin = () => {
       reason: 'Inappropriate behavior',
       date: '2024-04-22',
     },
-    // ... add more reports as needed
+    {
+      reportId: 'R2',
+      reportedBy: {
+        name: 'Charlie Davis',
+        userId: 'U3'
+      },
+      reportedUser: {
+        name: 'Eva Green',
+        userId: 'U4'
+      },
+      reason: 'Spamming',
+      date: '2024-04-23',
+    },
+    {
+      reportId: 'R3',
+      reportedBy: {
+        name: 'Frank Harris',
+        userId: 'U5'
+      },
+      reportedUser: {
+        name: 'Grace Ives',
+        userId: 'U6'
+      },
+      reason: 'Harassment',
+      date: '2024-04-24',
+    },
   ]);
+  const reportDetails = {
+    reportingUser: "John Doe",
+    reportedUser: "Jane Smith",
+    reportContent: "Unacceptable behavior during the ride."
+  };
+  
 
-  const handleSeeDetails = (userId) => {
-    console.log('See Details', userId);
-    // Placeholder for ban logic, e.g., API call to ban the user
-    // After banning, you may want to remove the report from the list or mark as resolved
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -58,10 +93,11 @@ const ReportTableAdmin = () => {
         </thead>
         <tbody>
           {reports.map((report) => (
-            <ReportRow key={report.reportId} report={report} onDetails={handleSeeDetails} />
+            <ReportRow key={report.reportId} report={report} onDetails={handleModalOpen} />
           ))}
         </tbody>
       </table>
+      {isModalOpen &&   <ReportDetails reportDetails={reportDetails} handleClose={handleModalClose} />} 
     </div>
   );
 };
