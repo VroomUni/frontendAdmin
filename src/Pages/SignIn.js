@@ -10,7 +10,7 @@ export const SignIn = () => {
 
   const handleLogin = () => {
    
-    navigate("/Dashboard");
+    navigate("/adminDashboard");
   };
 
   return (
