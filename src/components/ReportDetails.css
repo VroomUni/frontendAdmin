@@ -1,6 +1,6 @@
-/* ReportDetails.css */
+
 .modalContent {
-    position: relative; /* Needed for absolute positioning of the close icon */
+    position: relative; 
     padding: 2rem;
     background-color: #ffffff;
     border-radius: 8px;
@@ -27,11 +27,11 @@
   
   .actionButtons button {
     flex-grow: 1;
-    margin-right: 10px; /* Spacing between buttons */
+    margin-right: 10px; 
   }
   
   .actionButtons button:last-child {
-    margin-right: 0; /* Remove margin for the last button */
+    margin-right: 0; 
   }
   
   .closeButton {

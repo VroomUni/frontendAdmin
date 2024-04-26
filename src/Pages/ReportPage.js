@@ -1,17 +1,14 @@
-import React from 'react';
-import SideBarNavigation from '../components/SideBarNavigation';
-import ReportTableAdmin from '../components/ReportTableAdmin';
-import './ReportPage.css'; // Make sure to create a CSS file for the styles
+import React from 'react'
+import SideBarNavigation from '../components/SideBarNavigation'
+import ReportTableAdmin from '../components/ReportTableAdmin'
 
 function ReportPage() {
   return (
-    <div className="report-page-container">
-      <SideBarNavigation />
-     
-        <ReportTableAdmin />
-    
-    </div>
-  );
+    <>
+    <SideBarNavigation/>
+    <ReportTableAdmin/>
+    </>
+  )
 }
 
-export default ReportPage;
+export default ReportPage

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
-import Navigation from './Navigation';
+
 import BarChart from './Barchart';
 import SideBarNavigation from './SideBarNavigation';
 
@@ -9,7 +9,7 @@ import SideBarNavigation from './SideBarNavigation';
 const MainSection = () => {
   return (
      <div className="container">
-       {/* <Navigation /> */}
+     
        <SideBarNavigation/>
     <section className="main">
       
@@ -17,7 +17,7 @@ const MainSection = () => {
         <p>the main section one test !</p>
      
       </div>
-      <div style={{ marginLeft: '100px' }}> {/* Add left margin here */}
+      <div style={{ marginLeft: '100px' }}> 
           <BarChart />
         </div>
     
