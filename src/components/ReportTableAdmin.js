@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TableAdmin.css'; // Ensure your CSS file is named TableAdmin.css and is in the same directory
+import './ReportTableAdmin.css'; // Ensure your CSS file is named TableAdmin.css and is in the same directory
 import ReportDetails from './ReportDetails';
 
 // ReportRow component represents a single row in the reports table

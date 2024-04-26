@@ -62,13 +62,17 @@
   
   .sidebar-header {
     padding: 20px;
-    /* background: #151521; */
     background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
-    color: #ffffff;
     text-align: center;
     font-size: 1.2em;
+    position: relative;
   }
-  
+  .LogoImageSideBar{
+    max-width: 200px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+  }
   .sidebar-list {
     list-style: none;
     padding: 0;
@@ -86,27 +90,25 @@
   }
   
   .sidebar-list li a:hover, .sidebar-list li a.active {
-    background: #353446;
-    color: #ffffff;
+    background: #C4E1F7;
+   
   }
   
-  .sidebar-list li a .react-icons {
-    margin-right: 10px;
+   .Link-icons {
+    margin-right: 20px; 
+    font-size: 1.2em;
+    font-weight: bold;
   }
-  
-  .btn-upgrade {
+  .btn-logout {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 15px 20px;
-    background: #ff9f00;
-    color: #ffffff;
+    background: #C4E1F7;
+    cursor: pointer;
     border: none;
-    text-transform: uppercase;
     transition: background 0.3s ease;
   }
   
-  .btn-upgrade:hover {
-    background: #e08e00;
-  }
+  
   
