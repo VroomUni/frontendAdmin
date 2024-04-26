@@ -3,6 +3,7 @@ import './Dashboard.css';
 
 import BarChart from './Barchart';
 import SideBarNavigation from './SideBarNavigation';
+import UserActivityChart from './UserActivityChart';
 
 
 
@@ -20,6 +21,7 @@ const MainSection = () => {
       <div style={{ marginLeft: '100px' }}> 
           <BarChart />
         </div>
+        <UserActivityChart/>
     
       
       
