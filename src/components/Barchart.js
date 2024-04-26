@@ -8,7 +8,7 @@ const BarChart = ({ isDashboard = false }) => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <div style={{ height: '400px', width: '600px' }}>
+    <div style={{ boxShadow: '2px 4px 10px 1px rgba(0, 0, 0, 0.47)', height: '400px', width: '400px' }}>
       <ResponsiveBar
         data={data}
         theme={{

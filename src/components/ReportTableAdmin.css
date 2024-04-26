@@ -1,0 +1,104 @@
+.reports-table-container {
+  font-family: 'Arial', sans-serif;
+  overflow-x: auto;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 20%;
+}
+
+.reports-table-header {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.reports-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Assuming you're using a similar layout for user details */
+.user-detail img {
+  border-radius: 50%;
+  width: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.user-email {
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Status indicator for the report status */
+.status-indicator {
+  padding: 5px 12px;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.75em;
+  display: inline-block;
+}
+
+/* Define colors for different statuses, if applicable */
+.reported {
+  background-color: #ffc107;
+}
+
+.resolved {
+  background-color: #28a745;
+}
+
+.unresolved {
+  background-color: #dc3545;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.ban-button {
+  background-color: #dc3545;
+}
+
+.ban-button:hover {
+  background-color: #bd2130;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .reports-table-header, .reports-table th, .reports-table td {
+    padding: 8px;
+  }
+
+  .user-detail img {
+    width: 30px; /* Adjust size for mobile */
+  }
+
+  .action-button {
+    padding: 6px 12px;
+  }
+}

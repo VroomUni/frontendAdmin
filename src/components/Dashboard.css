@@ -22,21 +22,7 @@
   margin: auto;
 }
 
-/* Navigation styles */
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 280px;
-  height: 110vh;
-  background: #fff;
-}
 
-.navbar {
-  width: 80%;
-  margin: 0 auto;
-}
 
 .logo {
   margin: 2rem 0 1rem 0;
