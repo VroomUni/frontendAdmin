@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 import Navigation from './Navigation';
-import TableAdmin from './TableAdmin';
+import TableAdmin from './ReportTableAdmin';
 
 const MainSection3 = () => {
   return (

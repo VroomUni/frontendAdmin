@@ -1,24 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiHome, FiTable, FiDollarSign, FiCompass, FiBell, FiUser, FiLogIn, FiUserPlus } from 'react-icons/fi';
+import { FiHome, FiTable,  FiLogIn, } from 'react-icons/fi';
 import './SideBarNavigation.css'; 
+import VroomLog from '../pic/logo.png'; 
+import { useNavigate } from "react-router-dom";
 const SideBarNavigation = () => {
+    const navigate = useNavigate()
+    const handleLogout = () =>{
+        navigate("/");
+    }
   return (
     
         <nav className="sidebar">
           <div className="sidebar-header">
-            <h3>Material Dashboard 2</h3>
+          <img className="LogoImageSideBar"src={VroomLog} alt="Logo" />
           </div>
           <ul className="sidebar-list">
             <li>
               <NavLink to="/adminDashboard" exact activeClassName="active">
-                <FiHome />
+                <FiHome className="Link-icons" />
                  Dashboard
               </NavLink>
             </li>
             <li>
-              <NavLink to="/table" activeClassName="active">
-                <FiTable /> 
+              <NavLink to="/reportTable" activeClassName="active">
+                <FiTable className="Link-icons" /> 
                 Reports
               </NavLink>
             </li>
@@ -26,7 +32,7 @@ const SideBarNavigation = () => {
            
            
           </ul>
-          <button className="btn-upgrade">  <FiLogIn /> Logout</button>
+          <button className="btn-logout" onClick={handleLogout}>  <FiLogIn  className="Link-icons"/> Logout</button>
         </nav>
       );
     };
