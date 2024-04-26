@@ -1,15 +1,18 @@
 import React from 'react';
 import SideBarNavigation from '../components/SideBarNavigation';
 import ReportTableAdmin from '../components/ReportTableAdmin';
-import './ReportPage.css'; // Make sure to create a CSS file for the styles
+import '../components/Dashboard.css';
 
 function ReportPage() {
   return (
-    <div className="report-page-container">
+    <div className="container">
       <SideBarNavigation />
-     
-        <ReportTableAdmin />
-    
+      <div className="main">
+        <h4 className="main-top">Users Reports</h4>
+        <div className="main-body">
+          <ReportTableAdmin />
+        </div>
+      </div>
     </div>
   );
 }
