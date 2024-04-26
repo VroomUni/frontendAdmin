@@ -1,25 +1,32 @@
 .left-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    text-align: center;
-    z-index: 6;
-    pointer-events: all;
-    padding: 3rem 17% 2rem 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+  }
+  
+  .LogoImage{
+    margin-right: 10rem;
   }
 .content {
     color: #fff;
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.6s;
+    
   }
-  .panel h3 {
+ .panel-header{
     font-weight: 600;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 5rem;
+    margin-right: 13rem;
+    
   }
   
-  .panel p {
-    font-size: 0.95rem;
-    padding: 0.7rem 0;
-  }
+ 

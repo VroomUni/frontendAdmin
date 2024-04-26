@@ -1,75 +1,103 @@
-.dashboard {
-    font-family: 'Arial', sans-serif;
+.reports-table-container {
+  font-family: 'Arial', sans-serif;
+  overflow-x: auto;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reports-table-header {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.reports-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/* Assuming you're using a similar layout for user details */
+.user-detail img {
+  border-radius: 50%;
+  width: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.user-email {
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Status indicator for the report status */
+.status-indicator {
+  padding: 5px 12px;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.75em;
+  display: inline-block;
+}
+
+/* Define colors for different statuses, if applicable */
+.reported {
+  background-color: #ffc107;
+}
+
+.resolved {
+  background-color: #28a745;
+}
+
+.unresolved {
+  background-color: #dc3545;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.ban-button {
+  background-color: #dc3545;
+}
+
+.ban-button:hover {
+  background-color: #bd2130;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .reports-table-header, .reports-table th, .reports-table td {
+    padding: 8px;
   }
-  
-  .user-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+  .user-detail img {
+    width: 30px; /* Adjust size for mobile */
   }
-  
-  .user-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .action-button {
+    padding: 6px 12px;
   }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #eee;
-    margin-right: 1rem;
-  }
-  
-  .details h3 {
-    margin: 0;
-    font-size: 1rem;
-  }
-  
-  .details p {
-    margin: 0;
-    color: #666;
-  }
-  
-  .timestamp {
-    color: #666;
-  }
-  
-  .actions {
-    display: flex;
-    align-items: center;
-  }
-  
-  .btn {
-    padding: 0.5rem 1rem;
-    margin: 0 0.25rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    font-size: 0.875rem;
-  }
-  
-  .btn.approve {
-    background-color: #28a745;
-  }
-  
-  .btn.reject {
-    background-color: #dc3545;
-  }
-  
-  .btn:hover {
-    opacity: 0.9;
-  }
-  
+}
