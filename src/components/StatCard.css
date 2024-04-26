@@ -1,12 +1,14 @@
 .stat-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    margin: 10px;
-  }
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin:2px; /* Decrease this value to reduce the space between the cards */
+}
+
+
   
   .stat-icon {
     padding: 10px;

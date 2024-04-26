@@ -2,19 +2,20 @@ import React from 'react';
 import StatCard from './StatCard';
 import { FiShoppingCart, FiUsers, FiDollarSign, FiHeart } from 'react-icons/fi';
 import './StatCardList.css';
+import './StatCard.css';
 
 
 const StatCardList = () => {
   return (
     <div className="dashboard">
-      <StatCard
+      {/* <StatCard
         icon={<FiShoppingCart />}
         title="Bookings"
         value="281"
         percentage="+55% than last week"
         description="Just updated"
         isPositive={true}
-      />
+      /> */}
       <StatCard
         icon={<FiUsers />}
         title="Today's Users"

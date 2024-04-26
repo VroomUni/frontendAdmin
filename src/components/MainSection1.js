@@ -1,14 +1,14 @@
 import React from 'react';
 import './Dashboard.css';
-import Navigation from './Navigation';
+
 import BarChart from './Barchart';
-import StatCard from './StatCard';
+
 import StatCardList from './StatCardList';
 
 const MainSection = () => {
   return (
     <div className="container">
-      <Navigation />
+    
       <section className="main">
         <div className="main-top">
           <p>the main section one test !</p>
