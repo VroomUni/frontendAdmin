@@ -1,17 +1,17 @@
-/* Dashboard.css */
+
 
 .dashboard-container {
     display: flex;
-    height: 100vh; /* Set the height to the viewport height */
+    height: 100vh; 
   }
   
   .sidebar-container {
-    width: 90px; /* Set the width of the sidebar */
-    height: 100%; /* Set the height to 100% of the parent container */
+    width: 90px; 
+    height: 100%;
   }
   
   .main-container {
-    flex-grow: 0.8; /* This will make the main section take up less space */
-    margin-left: 200px; /* This should be equal to the width of the sidebar */
-    padding: 0 20px; /* Add padding to the left and right */
+    flex-grow: 0.8; 
+    margin-left: 200px; 
+    padding: 0 20px; 
   }

@@ -3,9 +3,8 @@ import "./SignInForm.css";
 
 const SignInForm = ({ onLogin }) => {
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
     
-    // Call the callback function to notify the parent component
     if (onLogin) {
       onLogin();
     }

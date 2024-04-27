@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './ReportTableAdmin.css'; // Ensure your CSS file is named TableAdmin.css and is in the same directory
+import './ReportTableAdmin.css'; 
 import ReportDetails from './ReportDetails';
 
-// ReportRow component represents a single row in the reports table
+
 const ReportRow = ({ report, onDetails }) => {
   return (
     <tr>
@@ -19,7 +19,7 @@ const ReportRow = ({ report, onDetails }) => {
   );
 };
 
-// ReportTableAdmin component holds the state for all reports and renders the table
+
 const ReportTableAdmin = () => {
  
   const [reports, setReports] = useState([

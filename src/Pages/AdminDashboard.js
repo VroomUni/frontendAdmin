@@ -1,7 +1,7 @@
 import React from 'react';
 import SideBarNavigation from '../components/SideBarNavigation';
 import MainSection from '../components/MainSection1';
-import './AdminDashboard.css'; // Import the CSS file
+import './AdminDashboard.css'; 
 
 function AdminDashboard() {
   return (

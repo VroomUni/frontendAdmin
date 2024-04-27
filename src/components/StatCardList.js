@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import StatCard from './StatCard';
 import { FaCar } from 'react-icons/fa'; 
 import { FiUsers, FiAlertCircle } from 'react-icons/fi';
@@ -25,7 +25,7 @@ const StatCardList = () => {
         description="Just updated"
         isPositive={true}
       />
-      <Link to="/reportTable"> {/* Wrap the last card with Link */}
+      <Link to="/reportTable">
         <StatCard
           icon={<FiAlertCircle />}
           title="Number of Reports"

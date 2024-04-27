@@ -32,10 +32,10 @@
   background-color: #f8f8f8;
 }
 
-/* Assuming you're using a similar layout for user details */
+
 .user-detail img {
   border-radius: 50%;
-  width: 40px; /* Adjust size as needed */
+  width: 40px; 
   margin-right: 10px;
 }
 
@@ -44,7 +44,7 @@
   font-size: 0.9em;
 }
 
-/* Status indicator for the report status */
+
 .status-indicator {
   padding: 5px 12px;
   color: white;
@@ -53,7 +53,7 @@
   display: inline-block;
 }
 
-/* Define colors for different statuses, if applicable */
+
 .reported {
   background-color: #ffc107;
 }
@@ -88,14 +88,14 @@
   background-color: #bd2130;
 }
 
-/* Responsive styling */
+
 @media screen and (max-width: 768px) {
   .reports-table-header, .reports-table th, .reports-table td {
     padding: 8px;
   }
 
   .user-detail img {
-    width: 30px; /* Adjust size for mobile */
+    width: 30px; 
   }
 
   .action-button {
