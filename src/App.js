@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { SignIn } from "./Pages/SignIn";
 import AdminDashboard from "./Pages/AdminDashboard";
 import ReportPage from "./Pages/ReportPage";
-import UserActivityChart from "./components/UserActivityChart";
+
 
 
 function App() {

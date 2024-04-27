@@ -13,7 +13,7 @@ function UserActivityChart() {
         { month: "June", NewUsers: 230, ActiveUsers: 1100 },
     ];
     return (
-        <div className="chart" style={{ height: '400px', width: '600px', marginLeft: '20%' }}>
+        <div className="chart" style={{ height: '400px', width: '600px', marginLeft: '1px'}}>
           <div className="titleChart">
             Last 6 months (User Activity)
           </div>

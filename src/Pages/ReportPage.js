@@ -1,14 +1,20 @@
-import React from 'react'
-import SideBarNavigation from '../components/SideBarNavigation'
-import ReportTableAdmin from '../components/ReportTableAdmin'
+import React from 'react';
+import SideBarNavigation from '../components/SideBarNavigation';
+import ReportTableAdmin from '../components/ReportTableAdmin';
+import '../components/Dashboard.css';
 
 function ReportPage() {
   return (
-    <>
-    <SideBarNavigation/>
-    <ReportTableAdmin/>
-    </>
-  )
+    <div className="container">
+      <SideBarNavigation />
+      <div className="main">
+        <h4 className="main-top">Users Reports</h4>
+        <div className="main-body">
+          <ReportTableAdmin />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default ReportPage
+export default ReportPage;
